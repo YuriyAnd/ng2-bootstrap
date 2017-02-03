@@ -1,6 +1,6 @@
 import { GettingStartedComponent } from './getting-started/getting-started.component';
-import { AccordionSectionComponent } from './components/accordion/accordion-section.component';
-import { AlertsSectionComponent } from './components/alerts/alerts-section.component';
+// import { AccordionSectionComponent } from './components/accordion/accordion-section.component';
+import { AlertsSectionComponent } from './components/+alerts/alerts-section.component';
 import { ButtonsSectionComponent } from './components/buttons/buttons-section.component';
 import { CarouselSectionComponent } from './components/carousel/carousel-section.component';
 import { CollapseSectionComponent } from './components/collapse/collapse-section.component';
@@ -26,12 +26,14 @@ export const routes = [
   {
     path: 'accordion',
     data: ['Accordion'],
-    component: AccordionSectionComponent
+    // component: AccordionSectionComponent
+    loadChildren: './components/+accordion/demo-accordion.module#DemoAccordionModule'
   },
   {
     path: 'alerts',
     data: ['Alerts'],
-    component: AlertsSectionComponent
+    // component: AlertsSectionComponent,
+    loadChildren: './components/+alerts/demo-alert.module#DemoAlertsModule'
   },
   {
     path: 'buttons',

@@ -7,6 +7,8 @@ import { DEMOS } from './demos';
 // webpack html imports
 let titleDoc = require('html-loader!markdown-loader!./docs/usage.md');
 
+console.log('loaded async')
+
 @Component({
   selector: 'accordion-section',
   template: `

@@ -11,8 +11,8 @@ import { TopMenuComponent } from './common/top-menu/top-menu.component';
 import { SearchFilterPipe } from './common/main-menu/search-filter.pipe';
 import { AppFooterComponent } from './common/app-footer/app-footer.component';
 // will be lazy loaded later
-import { DemoAccordionModule } from './components/accordion';
-import { DemoAlertsModule } from './components/alerts';
+// import { DemoAccordionModule } from './components/accordion';
+// import { DemoAlertsModule } from './components/alerts';
 import { DemoButtonsModule } from './components/buttons';
 import { DemoCarouselModule } from './components/carousel';
 import { DemoCollapseModule } from './components/collapse';
@@ -48,8 +48,8 @@ import { ngdoc } from '../ng-api-doc';
     RouterModule.forRoot(routes, {useHash: true}),
     Ng2PageScrollModule.forRoot(),
     // will be lazy loaded later on
-    DemoAccordionModule,
-    DemoAlertsModule,
+    // DemoAccordionModule,
+    // DemoAlertsModule,
     DemoButtonsModule,
     DemoCarouselModule,
     DemoCollapseModule,
